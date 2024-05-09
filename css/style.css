@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100%;
+}
+
+header {
+	width:100%; /* Establecemos que el header abarque el 100% del documento */
+    height: 120px;
+	overflow:hidden; /* Eliminamos errores de float */
+	background:#252932;
+	margin-bottom:2rem;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+.tittle{
+    text-align: center;
+    font-family: "Assistant", sans-serif;
+    font-optical-sizing: auto;
+    color: #ffffff;
+    margin-top: 1rem;
+}
+
+.text{
+    padding: 15px;
+    color: #051a24;
+    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.w-80{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin-left: 8rem;
+}
+
+.carousel-control-prev{
+    margin-left: 3rem;
+}
+
+.carousel-control-next{
+    margin-right: 3.5rem;
+}
+
+.carousel-control-next-icon,.carousel-control-prev-icon{
+    color: rgb(0, 0, 0);    
+}
+
+.row{
+    justify-content: center;
+}
+
+.us{
+    display: flex;
+    flex-direction: row;
+}
+
+.us img{
+    width: 90px;
+    height: 60px;
+}
+
+.form-check{
+    display: flex !important;
+    justify-content: center;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
