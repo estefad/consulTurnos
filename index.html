@@ -7,13 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <title>Alta-Central de turnos</title>
+    
+    <!--
+      <script src="./js/turnos.js"></script>
+    -->
     <script defer src="js/main.js"></script>
 </head>
 <body>
   <header>
     <div class="inicio">
-      <h1 class="tittle">ALTA - Centro en Patologias</h1>
-      <h2>Pre Entrega 1- Dominguez</h2>
+      <img src="./alta logo.png" alt="" width="150px" height="150px">
+      <h1 class="tittle"> - Centro en Patologias</h1>
     </div>
   </header>
       
@@ -61,18 +65,21 @@
         </div>
 
         <div class="us">
-            <h4>Objetivo</h4>
-            <img src="./src/thumbnail_img_nota_web_Talleres_Salud_Mental.png" alt="">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            <div class="obj">
+              <h4 class="tit">Objetivo</h4>
+              <img src="./src/thumbnail_img_nota_web_Talleres_Salud_Mental.png" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
               Nihil adipisci saepe iure, quis nostrum consequatur dolores odio veniam. 
               Laborum veritatis rem aliquam exercitationem. Quas ducimus doloremque rerum voluptate ex vitae.</p>
-          
-        
-          <h4>Eficacia</h4>
-          <img src="./src/proyecto-nuevo-44jpg.webp" alt="">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Nihil adipisci saepe iure, quis nostrum consequatur dolores odio veniam. 
-            Laborum veritatis rem aliquam exercitationem. Quas ducimus doloremque rerum voluptate ex vitae.</p>
+            </div>
+            <div class="efi">
+              <h4 class="tit">Eficacia</h4>
+              <img src="./src/proyecto-nuevo-44jpg.webp" alt="">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Nihil adipisci saepe iure, quis nostrum consequatur dolores odio veniam. 
+              Laborum veritatis rem aliquam exercitationem. Quas ducimus doloremque rerum voluptate ex vitae.</p> 
+            </div>
+        </div>
         </div>
       </div>
     </section>
@@ -106,13 +113,13 @@
           <input type="date" class="form-control" id="validationServer03" aria-describedby="validationServer03Feedback" required>
         </div>
 
-        <div class="col-md-3">
+        <div id="lugar" class="col-md-3">
           <label for="validationServer04" class="form-label">Sede</label>
-          <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
-            <option selected disabled value="">Sede</option>
-            <option>Palermo</option>
-            <option>Lanus</option>
-          </select>
+            <select class="form-select" id="validationServer04" aria-describedby="validationServer04Feedback" required>
+                <option selected disabled value="">Sede</option>
+                <option selected active>Palermo</option>
+                <option selected active>Lanus</option>
+            </select>
         </div>
 
     
@@ -132,17 +139,18 @@
         </div>
       </form>
 
-      <footer>
+      <footer class="foot">
         <div>
-          <p>ALTA-Centro en patologias de Salud Mental desde 2013</p>
+          <p class="der">ALTA-Centro en patologias de Salud Mental desde 2013</p>
         </div>
-        <div>
-          <h3>Seguinos</h3>
-          <a target="_blank" href="https://twitter.com/"><img src="" alt="" height=50 width="">
-          <a target="_blank" href="https://instagram.com/"><img src="" alt="" height=50 width="">
-          <a target="_blank" href="https://linkedin.com/"><img src="" alt="" height=50 width="">
+        <div class="red">
+          <h3 class="follow">Seguinos</h3>
+          <div>
+            <a target="_blank" href="https://twitter.com/"><img class="x" src="./x.webp" alt="" height=20px width=20px>
+            <a target="_blank" href="https://instagram.com/"><img class="ig" src="./ig.png" alt="" height=20px width=20px>
+            <a target="_blank" href="https://linkedin.com/"><img src="./ln.webp" alt="" height=20px width=20px>
+          </div>
         </div>
-        <div></div>
       </footer>
     
 </body>

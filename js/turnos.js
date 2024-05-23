@@ -1,0 +1,27 @@
+const Turnos=[
+    {id:0, dia:'Lunes', horario: 10.00, especialidad: '', precio: 4},
+    {id:1, dia:'Lunes', horario: 11.00, especialidad: '', precio: 4},
+    {id:2, dia:'Lunes', horario: 12.00, especialidad: '', precio: 4},
+    {id:3, dia:'Lunes', horario: 13.30, especialidad: '', precio: 4},
+    {id:6, dia:'Lunes', horario: 16.00, especialidad: '', precio: 4},
+    {id:7, dia:'Martes', horario: 10.30, especialidad: '', precio: 4},
+    {id:8, dia:'Martes', horario: 11.00, especialidad: '', precio: 4},
+    /*{dia:'Martes', horario: 12.45, especialidad: '', precio: 4},
+    {dia:'Martes', horario: 14.00, especialidad: '', precio: 4},
+    {dia:'Martes', horario: 15.00, especialidad: '', precio: 4},
+    {dia:'Miercoles', horario: 10.00, especialidad: '', precio: 4},
+    {dia:'Miercoles', horario: 10.30, especialidad: '', precio: 4},
+    {dia:'Miercoles', horario: 12.00, especialidad: '', precio: 4},
+    {dia:'Miercoles', horario: 14.30, especialidad: '', precio: 4},
+    {dia:'Jueves', horario: 10.00, especialidad: '', precio: 4},
+    {dia:'Jueves', horario: 10.30, especialidad: '', precio: 4},
+    {dia:'Jueves', horario: 11.30, especialidad: '', precio: 4},
+    {dia:'Jueves', horario: 16.00, especialidad: '', precio: 4},
+    {dia:'Jueves', horario: 17.00, especialidad: '', precio: 4},
+    {dia:'Viernes', horario: 11.00, especialidad: '', precio: 4},
+    {dia:'Viernes', horario: 11.30, especialidad: '', precio: 4},
+    {dia:'Viernes', horario: 13.45, especialidad: '', precio: 4},
+    {dia:'Viernes', horario: 15.15, especialidad: '', precio: 4},
+    {dia:'', horario: 16.00, especialidad: '', precio: 4},*/
+    
+]

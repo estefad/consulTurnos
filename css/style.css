@@ -21,10 +21,10 @@ header {
 
 .inicio{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    height: 30px;
 }
 
 
@@ -67,12 +67,43 @@ header {
 
 .us{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.tit{
+    text-align: center;
 }
 
 .us img{
-    width: 90px;
-    height: 60px;
+    width: 180px;
+    height: 120px;
+    margin-left: 43%;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+}
+
+form.row.g-3{
+    margin-left: 12rem;
+    padding: 1rem;
+}
+
+.row {
+    width: 70%;
+    padding: 1rem;
+    background-color: #e1e1e1;
+    border-radius: 2rem;
+}
+
+.form-label{
+    font-family:  'Poppins', sans-serif;
 }
 
 .form-check{
@@ -80,7 +111,29 @@ header {
     justify-content: center;
 }
 
-.btn{
+.der{
+    color: #ffffff;
+}
+
+.follow{
+    color: #ffffff;
+}
+
+.foot{
+    margin-top: 4rem;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: #252932;
+}
+
+
+
+.x{
+    border-radius: 20px;
+}
+
+.ig{
+    border-radius: 10px;
 }
