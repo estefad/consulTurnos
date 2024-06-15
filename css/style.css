@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 
 * { 
@@ -27,7 +28,6 @@ header {
     height: 30px;
 }
 
-
 .tittle{
     text-align: center;
     font-family: "Assistant", sans-serif;
@@ -39,7 +39,7 @@ header {
 .text{
     padding: 15px;
     color: #051a24;
-    font-family:  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'josefin sans';
 }
 
 .w-80{
@@ -65,6 +65,10 @@ header {
     justify-content: center;
 }
 
+.ef{
+    font-family: 'josefin sans';
+    color:  #252932;
+}
 .us{
     display: flex;
     flex-direction: column;
@@ -81,34 +85,16 @@ header {
     margin-left: 43%;
 }
 
-form{
+.cards{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 1rem;
-    margin: auto;
-}
-
-form.row.g-3{
-    margin-left: 12rem;
+    flex-direction: row;
     padding: 1rem;
-}
-
-.row {
-    width: 70%;
-    padding: 1rem;
-    background-color: #e1e1e1;
-    border-radius: 2rem;
-}
-
-.form-label{
-    font-family:  'Poppins', sans-serif;
-}
-
-.form-check{
-    display: flex !important;
     justify-content: center;
+}
+
+.card{
+    margin: .5rem;
 }
 
 .der{
@@ -127,8 +113,6 @@ form.row.g-3{
     align-items: center;
     background: #252932;
 }
-
-
 
 .x{
     border-radius: 20px;
