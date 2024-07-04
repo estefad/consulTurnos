@@ -2,17 +2,20 @@
 
 const card = document.getElementById('cards')
 const misTurnos = document.getElementById('misTurnos')
+//const urlTurnos = "js/turnos.json"
+const urlTurnos = "https://6681d24604acc3545a07a96c.mockapi.io/Turnos"
 
 const turnosTomados = []
 
 function cargarTurnos(turno){
     return `<div class="card" style="width: 18rem;">
-            <img src="..." class="card-img-top" alt="...">
+            <img src="${turno.img}" class="card-img-top" alt="${turno.value}">
             <div class="card-body">
             <h5 class="card-title">${turno.especialidad}</h5>
             <h5 class="card-title">${turno.especialista}</h5>
+            <p class="card-text">fecha: ${turno.fecha}</p>
             <p class="card-text">${turno.horario} hs</p>
-            <p class="card-text">${turno.precio}</p>
+            <p class="card-text">Consulta: $${turno.precio}</p>
             <button id= ${turno.id} class="btn btn-primary">Agendar turno</button>
             </div>
         </div>`
@@ -45,7 +48,7 @@ function buscaTurnos(){
             res.forEach((turno)=>card.innerHTML += cargarTurnos(turno))
             //se vuelve a llamar a la card que contiene el turno
         }else{
-            card.innerHTML = 'No hay turnos disponibles'
+            card.innerHTML = 'No hay turnos disponibles o no especifico dia y especialidad.'
             const botonReintentar = document.createElement('button')
             botonReintentar.innerText = 'Reintentar'
             botonReintentar.addEventListener('click', () => {
@@ -65,21 +68,31 @@ function agregarTurno(){
         agrego.addEventListener('click', (e) =>{
             e.preventDefault()
             const turnoAgregado= turnos.filter((turno) => turno.id == agrego.id)
-            console.log(turnoAgregado)
             turnosTomados.length > 2 ? Swal.fire("Solo puede tomar 3 turnos") : turnosTomados.push(turnoAgregado) 
             localStorage.setItem('turnosSeleccionados', JSON.stringify(turnosTomados))
+             
             //como solo puede tomar 3 turnos, el push se corta con el alert
             
         })
     });
 }
 
-cargarCard()
+
+async function obtenerTurnos(){
+    try {
+        const response = await fetch(urlTurnos)
+        const data = await response.json()
+        turnos = data
+        //se obtienen los turnos
+        cargarCard()
+        agregarTurno()
+    } catch (error) {
+        Swal.fire("Ha ocurrido un error. Intente en unos minutos")
+    }
+    
+}
+
+
+obtenerTurnos()
 buscaTurnos()
-agregarTurno()
-
-
-
-
-
 

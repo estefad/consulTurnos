@@ -8,36 +8,35 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Alta-Central de turnos</title>
-    
-    <script src="./js/turnos.js"></script>
+    <!--<script src="./js/turnos.json"></script>-->
     <script defer src="js/main.js"></script>
 </head>
 <body>
   <header>
     <div class="inicio">
-      <img src="./alta logo.png" alt="" width="150px" height="180px">
-      <h1 class="tittle"> - Centro en Patologias</h1>
+      <img src="./src/alta logo.png" alt="" width="150px" height="180px">
+      <h1 class="tittle"> - Centro en Patologias de Salud Mental</h1>
     </div>
   </header>
       
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="./a.jpg" class="w-80" alt="..." height="450px">
+        <img src="./src/a.jpg" class="w-80" alt="..." height="450px">
         <div class="carousel-caption d-none d-md-block">
           <h5>Conoce nuestros cursos</h5>
           <p>Pensados para profesionales de la Salud</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./b.jpg" class="w-80" alt="..." height="450px">
+        <img src="./src/b.jpg" class="w-80" alt="..." height="450px">
         <div class="carousel-caption d-none d-md-block">
           <h5>Solicita tu turno</h5>
           <p>Atencion personalizada y turnos online</p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="./c.jpg" class="w-80" alt="..." height="450px">
+        <img src="./src/c.jpg" class="w-80" alt="..." height="450px">
         <div class="carousel-caption d-none d-md-block">
           <h5>Especialistas</h5>
           <p>Formamos y capacitamos en Salud Mental</p>
@@ -83,23 +82,23 @@
       </div>
     </section>
 
-    <div>
+    <div class="sub">
         <h3>Ahora podes solicitar turnos via online</h3>
         <p>Elegí el turno que se adapte a tus dias</p>
     </div>
     <div class="buscarTurnos">
       <div>
-        <input type="search" id="especialidad" placeholder="buscar por especialidad">
+        <input id="especialidad" placeholder="Buscar por especialidad">
       </div>
       <div>
-        <input type="search" id="dia" placeholder="buscar por dia" >
+        <input id="dia" placeholder="Buscar por dia" >
       </div>
-      <div class="btn">
+      <div class="btnn">
         <button id="agendar" class="btn-primary" type="submit">Buscar</button>
       </div>
     </div>
-    <div>
-      <button id="misTurnos" class="but"><a  href="./misTurnos.html"> Mis turnos</a></button>
+    <div class="but">
+      <button id="misTurnos"><a href="./misTurnos.html"> Mis turnos</a></button>
     </div>
     
     <div id="cards" class="cards">
@@ -112,9 +111,9 @@
       <div class="red">
         <h3 class="follow">Seguinos</h3>
         <div>
-          <a target="_blank" href="https://twitter.com/"><img class="x" src="./x.webp" alt="" height=20px width=20px>
-          <a target="_blank" href="https://instagram.com/"><img class="ig" src="./ig.png" alt="" height=20px width=20px>
-          <a target="_blank" href="https://linkedin.com/"><img src="./ln.webp" alt="" height=20px width=20px>
+          <a target="_blank" href="https://twitter.com/"><img class="x" src="./src/x.webp" alt="" height=20px width=20px>
+          <a target="_blank" href="https://instagram.com/"><img class="ig" src="./src/ig.png" alt="" height=20px width=20px>
+          <a target="_blank" href="https://linkedin.com/"><img src="./src/ln.webp" alt="" height=20px width=20px>
         </div>
       </div>
     </footer>

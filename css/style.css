@@ -47,6 +47,7 @@ header {
     justify-content: center;
     width: 80%;
     margin-left: 8rem;
+    box-shadow: 10px 10px 5px rgb(153, 153, 153);
 }
 
 .carousel-control-prev{
@@ -67,22 +68,91 @@ header {
 
 .ef{
     font-family: 'josefin sans';
-    color:  #252932;
+    color:  #000000;
+    padding: 1rem;
 }
 .us{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 2rem;
 }
 
 .tit{
-    text-align: center;
+    margin-left: 10rem;
+    color: #000000;
 }
 
 .us img{
     width: 180px;
     height: 120px;
-    margin-left: 43%;
+    margin-left: 23%;
+}
+
+.sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    margin-top: 3rem;
+    background-color: rgb(192, 192, 192);
+}
+
+.sub h3{
+    font-family: 'josefin sans';
+    color:  #252932;
+}
+
+.buscarTurnos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+}
+
+.but{
+    display: flex;
+    justify-content: center;
+}
+
+.but a{
+    font-family: 'josefin sans';
+    text-decoration: none;
+    color: #4c5b63;
+}
+
+#agendar{
+    background-color: #252932;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+#agendar:hover{
+    background-color: #4c5b63;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-title{
+    font-family: 'josefin sans';
+}
+
+.card-text{
+    font-family: 'josefin sans';
+}
+
+.buscarTurnos input{
+    width: 100%;
+    padding: 10px;
+    margin: .6rem;
+    border-radius: 8px;
+    border-color: #697175;
 }
 
 .cards{
@@ -97,6 +167,21 @@ header {
     margin: .5rem;
 }
 
+.btn{
+    background-color: rgb(119, 29, 13) !important;
+    border-color: rgb(83, 21, 10) !important;
+}
+
+.btn:hover{
+    background-color: rgb(136, 56, 42) !important;
+}
+
+#misTurnos{
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    color:  #252932;
+}
 .der{
     color: #ffffff;
 }
@@ -120,4 +205,50 @@ header {
 
 .ig{
     border-radius: 10px;
+}
+
+.confirmar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#tablaTurnos{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.total{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.inp{
+    border-radius: 5px;
+    margin: 1rem;
+}
+
+.lab{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS';
+}
+
+.ppal{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+#pag{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    color:  #252932;
 }
