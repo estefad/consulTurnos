@@ -49,6 +49,7 @@ function eliminarTurno(id) {
     }
 }
 
+
 //funcion que valida el email ingresado
 function validarDatos(){
     const email = document.getElementById('email').value
